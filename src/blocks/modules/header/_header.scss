@@ -1,6 +1,8 @@
 header {
     display: block;
 }
+
+
 .header{
     display:flex;
     justify-content:space-between;
@@ -9,21 +11,34 @@ header {
     padding:40px 6.07%;
     background-color:#fff;
     transition:all .3s ease-out
+    
+}
+.header{
+    .scrolled{
+        height: 65px
+    }
 }
 
-.page-body__header{
+.header__location{
     z-index:1;
     position:fixed
 }
+
+.header__hidden{
+    transform:translateY(-128px)
+}
+
 .clickable-picture{
     border:none;
     background:none;
     cursor:pointer
 }
+
 .clickable-picture__picture{
     width:16px;
     height:16px
 }
+
 .clickable-picture_size_48 .clickable-picture__picture{
     width:48px;
     height:48px
