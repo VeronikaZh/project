@@ -56,13 +56,19 @@ banner {
     cursor: pointer;
     transition: $button-background .3s;
 }
-.button-text {
-    cursor: pointer;
+.button-text{
+    background: $button-background;
     border: none;
+}
+
+.link__text {
+    text-decoration: none;
+    cursor: pointer;
+    
     color: #fff;
     font-size: 16px;
     background: $button-background;
-    margin-left: 1rem;
+    border: none;
 }
 
 .banner__topic {
