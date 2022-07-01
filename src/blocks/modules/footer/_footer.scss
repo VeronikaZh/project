@@ -1,0 +1,171 @@
+.footer{
+    border-radius: 0 50px 0 0;
+    margin-top: 192px;
+    color: #fff;
+    background: #316099;
+    padding-bottom: 64px;
+}
+
+
+.footer-section{
+    max-width: 960px;
+    padding: 0 10px;
+}
+
+
+.title-button__title {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.title-button__description{
+    margin-bottom: 90px;
+    opacity: .6;
+}
+
+
+.title-button__button{
+    width: 100%;
+    max-width: 220px;
+}
+.title-button__button-text{
+    color: #fff;
+}
+.separator {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 1px;
+    margin: 96px 0;
+    max-width: calc(940px + (100vw - 960px) / 2);
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+  .company-information {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-information__about-us, .company-information__follow-us, .company-information__short-information {
+    max-width: 270px;
+}
+
+.company-information__logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.company-logo{
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+}
+
+.company-name{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 46px;
+}
+
+.company-information__contact{
+    list-style-type: none;
+}
+.contact-element {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: start;
+    column-gap: 16px;
+    line-height: 26px;
+}
+.contact-element__marker{
+    font-weight: 700;
+}
+
+.contact-element__text{
+    color: #fff;
+}
+
+.titled-links-list__header-container{
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titled-links-list__header {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.titled-links-list__links-list {
+    list-style-type: none;
+}
+
+.titled-links-list__element-list {
+    margin-bottom: 16px;
+}
+
+
+.link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+
+
+
+@media (min-width: 860px){
+    .footer{
+        padding-top: 90px;
+        margin-right: 96px;
+        border-radius: 0 200px 0 0;
+    }
+    .title-button__title{
+        max-width: 320px;
+    }
+    .title-button__description{
+        max-width: 460px;
+    }
+    .company-information {
+        margin-right: 125px;
+    }
+}
+
+@media (max-width: 859px){
+    .footer {
+        padding-top: 20px;
+    }
+
+    .company-information__about-us, .company-information__follow-us, .company-information__short-information {
+        margin-bottom: 24px;
+    }
+}
+@media (min-width: 650px){
+    .title-button{
+        display: grid;
+        grid-template-columns: auto 220px;
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        gap: 32px;
+    }
+
+    .title-button__title, .title-button__description{
+        margin-bottom: 0;
+    }
+
+    .title-button__button{
+        grid-row: span 2;
+        align-self: center;
+    }
+}
+
+@media (min-width: 950px){
+    .footer-section {
+        margin-left: calc((100vw - 960px) / 2);
+    }
+}
