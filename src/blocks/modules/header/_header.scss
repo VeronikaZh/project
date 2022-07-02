@@ -13,11 +13,11 @@ header {
     transition:all .3s ease-out
     
 }
-.header{
-    .scrolled{
-        height: 65px
-    }
+.scrolled{
+    height: 65px;
+    padding: 10px 6.07%;
 }
+
 
 .header__location{
     z-index:1;
@@ -42,4 +42,7 @@ header {
 .clickable-picture_size_48 .clickable-picture__picture{
     width:48px;
     height:48px
+}
+.header__burger-button:hover{
+    background-color: #fff;
 }
