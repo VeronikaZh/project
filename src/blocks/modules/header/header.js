@@ -3,27 +3,24 @@
 document.addEventListener('DOMContentLoaded', () => {
     let lastScrollPostion = 0;
     let isVisible = true;
-    const scrollTop = window.pageYOffset ? window.pageYOffset : (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
-    
 
     function headerVisibleControl(isVisibleNew) {
-        if (isVisibleNew == isVisible)
+        if (isVisibleNew == isVisible){
             return;
+        }
+            
+        
         
         document.querySelector('.header').classList.toggle('header__hidden');
         isVisible = isVisibleNew;
     }
 
     window.addEventListener('scroll', (e) => {
-        var st = window.pageYOffset;
-        var page = document.querySelector('body');
-        console.log(page.scrollTop);
-        if (page.scrollTop >= 20){
-            document.querySelector('.header').classList.toggle('scrolled')
-        }
         
+        var st = window.pageYOffset;
 
         if (st > lastScrollPostion) {
+            
             // down scroll
             headerVisibleControl(false);
         } else {

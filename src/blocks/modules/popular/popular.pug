@@ -1,0 +1,25 @@
+section.popular-section#popular
+    .articles.popular-grid
+        h2.articles__header Popular 
+        .articles__group.popular
+            each value, key in {'Feugiat sodales at nullam tellus.':'/img/svg/blog/articles/1.png', 'Porta proin tellus sed pulvinar odio eu pulvinar.':'/img/svg/blog/articles/2.png', 'Non quam tortor, proin eu egestas scelerisque purus.':'/img/svg/blog/articles/3.png', 'Amet amet sed pharetra risus sit eget interdum.':'/img/svg/blog/articles/4.png'}
+                article.blog-article 
+                    img(src=value alt="article image").blog-article__image
+                    .blog-article__body 
+                        h3.blog-article__title 
+                            a.blog-article__link=key
+                        .blog-article__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum.
+                        .blog-article__information-action
+                            .blog-article__information
+                                .blog-article__author Samatha Leuthex
+                                .blog-article__date May 5, 3 min read
+                            .blog-article__action
+                                button.blog-article__action-button
+                                    svg.blog-article__action-icon
+                                        use(xlink:href='img/svg/blog/icons/bookmark.svg#bookmark')
+                                button.blog-article__action-button
+                                    svg.blog-article__action-icon
+                                        use(xlink:href='img/svg/blog/icons/share.svg#share')
+        .articles__group-links  
+            a(href="#").group-articles__link 
+                span See All Popular Article                     

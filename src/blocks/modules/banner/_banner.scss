@@ -48,7 +48,7 @@ banner {
     max-width: 220px;
 }
 
-button {
+button.button-text {
     border: none;
     border-radius: 10px;
     padding: 15px 48px;
@@ -56,7 +56,7 @@ button {
     cursor: pointer;
     transition: $button-background .3s;
 }
-button:hover{
+button.button-text:hover{
     background:#1d5483
 }
 

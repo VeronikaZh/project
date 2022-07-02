@@ -1,0 +1,38 @@
+.all-articles-section{
+    margin-bottom: 56px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding: 0 10px;
+}
+
+.all-articles-links {
+    justify-content: space-between;
+}
+
+
+.left, .right{
+    width: 16px;
+    height: 16px;
+}
+
+.left{
+    transform: rotate(0.5turn);
+}
+
+
+@media (min-width: 700px){
+    .all-articles{
+        .blog-article{
+            display: flex;
+            column-gap: 20px;
+        }
+
+        .blog-article__image {
+            width: 300px;
+        }
+
+
+    }
+}
