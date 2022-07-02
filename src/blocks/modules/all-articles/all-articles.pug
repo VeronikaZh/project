@@ -1,0 +1,33 @@
+section.all-articles-section#all-articles 
+    .articles
+        h2.articles__header ALL ARTICLE
+        .articles__group.all-articles
+            each value, key in {'Massa eu in laoreet enim augue vulputate nunc.':'/img/svg/blog/articles/5.png', 'Feugiat a euismod arcu feugiat posuere morbi.':'/img/svg/blog/articles/6.png', 'Sociis purus pellentesque faucibus vitae et felis.':'/img/svg/blog/articles/7.png', 'Cursus feugiat mi pellentesque mauris sed eu.':'/img/svg/blog/articles/8.png', 'A morbi arcu curabitur etiam fringilla augue.':'/img/svg/blog/articles/9.png'}
+                article.blog-article 
+                    img(src=value alt="article image").blog-article__image
+                    .blog-article__body 
+                        h3.blog-article__title 
+                            a.blog-article__link=key
+                        .blog-article__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
+                        .blog-article__information-action
+                            .blog-article__information
+                                .blog-article__author Samatha Leuthex
+                                .blog-article__date May 5, 3 min read
+                            .blog-article__action
+                                button.blog-article__action-button
+                                    svg.blog-article__action-icon
+                                        use(xlink:href='img/svg/blog/icons/bookmark.svg#bookmark')
+                                button.blog-article__action-button
+                                    svg.blog-article__action-icon
+                                        use(xlink:href='img/svg/blog/icons/share.svg#share')
+        .articles__group-links.all-articles-links  
+            a(href="#").group-articles__link 
+                svg.blog-article__action-icon.left
+                    use(xlink:href='img/svg/blog/icons/arrow.svg#arrow')
+                span New Post  
+            a(href="#").group-articles__link 
+                span Old Post 
+                svg.blog-article__action-icon.right
+                    use(xlink:href='img/svg/blog/icons/arrow.svg#arrow')
+                 
+        

@@ -1,6 +1,7 @@
+$button-background: #5a98d0;
 .footer{
     border-radius: 0 50px 0 0;
-    margin-top: 192px;
+    margin-top: 96px;
     color: #fff;
     background: #316099;
     padding-bottom: 64px;
@@ -27,7 +28,19 @@
 .title-button__button{
     width: 100%;
     max-width: 220px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 48px;
+    background: $button-background;
+    cursor: pointer;
+    transition: $button-background .3s;
+
 }
+
+.title-button__button:hover{
+    background:#1d5483
+}
+
 .title-button__button-text{
     color: #fff;
 }
