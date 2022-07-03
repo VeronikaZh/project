@@ -95,6 +95,15 @@
     object-fit:cover;
 }
 
+.project-card-image__backgroung:hover{
+    .project-card-image__backgroung-image{
+        transform: scale(1.2);
+        transition: 2s;
+    }
+    
+}
+
+
 .project-image-gradient{
     position: absolute;
     width: 100%;

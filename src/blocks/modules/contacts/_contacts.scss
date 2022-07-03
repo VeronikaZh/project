@@ -1,0 +1,161 @@
+$button-background: #5a98d0;
+.contacts-section{
+    margin-bottom: 56px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding: 0 10px;
+}
+
+.contact-information {
+    max-width: 100%;
+    height: 760px;
+}
+
+.contact-information__picture{
+    width: 100%;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.contact-information__block, .contact-information__title{
+    margin-bottom: 26px;
+}
+.contact-information__block:first-child{
+    margin-top: 5rem;
+}
+
+.contact-information__icon{
+    width: 20px;
+    height: 20px;
+}
+
+.contact-information__title, .form__title{
+    color: #1F3F68;
+    font-size: 20px;
+}
+.contact-information__text{
+    color: #1F3F68;
+    opacity: 0.6;
+    margin-left: 25px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 26px;
+}
+.text-block {
+    display: flex;
+    margin-bottom: 24px;
+}
+.contact-information__text.text-block{
+    margin-left: 0;
+}
+
+// формa
+
+.form__title{
+    margin-bottom: 48px;
+}
+.contact-form{
+    max-height: 800px;
+    max-width: 540px;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+.contact-form__form{
+    padding: 2.8rem;
+}
+
+.submit-button{
+    width: 100%;
+    height: 72px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: $button-background;
+    cursor: pointer;
+    transition: $button-background .3s;
+}
+
+.submit-button:hover{
+    background:#1d5483
+}
+.text-block{
+    opacity: 0.6;
+}
+
+.input-text{
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 30px;
+    color: #1F3F68;
+    opacity: 0.8;
+    margin-top: 32px;
+}
+.input-text__title{
+    padding-bottom: 10px;
+    color: #1F3F68;
+    opacity: 0.8;
+}
+.input-place{
+    width: 100%;
+    height: 72px;
+    font-size: 16px;
+    outline: none;
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    border-radius: 10px;
+    background: transparent;
+    padding-left: 2rem;
+}
+
+.input-place:hover{
+    opacity: 0.9;
+}
+
+
+.card__link:hover {
+	color: #1F3F68;
+}
+
+.input-place.text-area{
+    height: 20px;
+    padding-top: 2rem;
+    padding-bottom: 144px;
+}
+.form-button{
+    margin-top: 78px;
+}
+
+//адаптив
+@media (min-width: 940px){
+    .contacts{
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+    }
+    .contact-information {
+        max-width: 300px;
+        padding-top: 80px;
+    }
+    .contact-information__picture{
+        height: 200px;
+
+    }
+}
+
+@media (min-width: 550px) and (max-width: 940px){
+    .contacts-section{
+        max-width: 540px;
+    }
+    .contact-form{
+        position: relative;
+        margin-top: 56px;
+    }
+    .contact-information {
+        
+        position: relative;
+        margin-top: 56px;
+    }
+
+    
+}

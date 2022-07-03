@@ -1,0 +1,42 @@
+section.contacts-section
+    .contacts
+        .contact-information 
+            svg.contact-information__picture
+                use(xlink:href='img/svg/contacts/contact.svg#contact')
+            .contact-information__block 
+                h3.contact-information__title ADDRESS
+                .contact-information__text.text-block Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.
+            .contact-information__block
+                h3.contact-information__title PHONE
+                .text-block
+                    svg.contact-information__icon
+                        use(xlink:href='img/svg/contacts/icons/phone.svg#phone')
+                    .contact-information__text +62-812-7313-4321
+                .text-block
+                    svg.contact-information__icon
+                        use(xlink:href='img/svg/contacts/icons/phone.svg#phone')
+                    .contact-information__text +62-817-000-1234
+            .contact-information__block
+                h3.contact-information__title ONLINE SERVICE
+                .text-block
+                    svg.contact-information__icon
+                        use(xlink:href='img/svg/contacts/icons/website.svg#website')
+                    .contact-information__text www.afrianska.com
+                .text-block
+                    svg.contact-information__icon
+                        use(xlink:href='img/svg/contacts/icons/email.svg#email')
+                    .contact-information__text hello.afrian@gmail.com
+        .contact-form 
+            form.contact-form__form
+                h3.form__title SEND US MESSAGE
+                p.input-text 
+                    .input-text__title Full Name
+                    input(type="text", name="name", placeholder="Your Name").input-place
+                p.input-text 
+                    .input-text__title Email
+                    input(type="email", name="email", placeholder="Your Email").input-place
+                p.input-text 
+                    .input-text__title Message
+                    input(type="textarea", name="message", placeholder="Your Message").input-place.text-area
+                .form-button
+                    button.submit-button SUBMIT

@@ -18,10 +18,28 @@ section{
     margin-bottom: 192px;
 }
 
-a{
+a {
+    position: relative;
     text-decoration: none;
     color: #fff;
 }
+
+.line-effect::before {
+	content: '';
+	position: absolute;
+	left: 0; bottom: -5px;
+	width: 0;
+	height: 1.5px;
+	background-color: #316099;
+}
+
+.line-effect:hover:before {
+	width: 100%;
+}
+.line-effect::before {
+	transition: width 0.35s;
+}
+
 .blog-separator{
     margin-bottom: 56px;
     width: 100%;
@@ -33,4 +51,8 @@ a{
     background-color: rgba(0,0,0,.2);
     height: 1px;
 }
+.not-scroll{
+    overflow: hidden;
+}
+
 

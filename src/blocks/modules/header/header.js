@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function openMenu(e) {
         console.log(e);
         menu.classList.remove('menu_disabled');
+        document.querySelector('.body').classList.toggle('not-scroll');
+
     }
 
     function closeMenu(e) {
